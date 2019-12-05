@@ -34,11 +34,11 @@ EXTENSIONS = {
 
     "envoy.filters.http.adaptive_concurrency":          "//source/extensions/filters/http/adaptive_concurrency:config",
     # "envoy.filters.http.buffer":                        "//source/extensions/filters/http/buffer:config",
-    "envoy.filters.http.cors":                          "//source/extensions/filters/http/cors:config",
-    "envoy.filters.http.csrf":                          "//source/extensions/filters/http/csrf:config",
+    # "envoy.filters.http.cors":                          "//source/extensions/filters/http/cors:config",
+    # "envoy.filters.http.csrf":                          "//source/extensions/filters/http/csrf:config",
     # "envoy.filters.http.dynamic_forward_proxy":         "//source/extensions/filters/http/dynamic_forward_proxy:config",
     # "envoy.filters.http.dynamo":                        "//source/extensions/filters/http/dynamo:config",
-    "envoy.filters.http.ext_authz":                     "//source/extensions/filters/http/ext_authz:config",
+    # "envoy.filters.http.ext_authz":                     "//source/extensions/filters/http/ext_authz:config",
     # "envoy.filters.http.fault":                         "//source/extensions/filters/http/fault:config",
     "envoy.filters.http.grpc_http1_bridge":             "//source/extensions/filters/http/grpc_http1_bridge:config",
     "envoy.filters.http.grpc_http1_reverse_bridge":     "//source/extensions/filters/http/grpc_http1_reverse_bridge:config",
@@ -53,7 +53,7 @@ EXTENSIONS = {
     # "envoy.filters.http.lua":                           "//source/extensions/filters/http/lua:config",
     # "envoy.filters.http.original_src":                  "//source/extensions/filters/http/original_src:config",
     # "envoy.filters.http.ratelimit":                     "//source/extensions/filters/http/ratelimit:config",
-    "envoy.filters.http.rbac":                          "//source/extensions/filters/http/rbac:config",
+    # "envoy.filters.http.rbac":                          "//source/extensions/filters/http/rbac:config",
     "envoy.filters.http.router":                        "//source/extensions/filters/http/router:config",
     # "envoy.filters.http.squash":                        "//source/extensions/filters/http/squash:config",
     # "envoy.filters.http.tap":                           "//source/extensions/filters/http/tap:config",
@@ -80,13 +80,13 @@ EXTENSIONS = {
     # "envoy.filters.network.dubbo_proxy":                "//source/extensions/filters/network/dubbo_proxy:config",
     "envoy.filters.network.echo":                       "//source/extensions/filters/network/echo:config",
     # "envoy.filters.network.ext_authz":                  "//source/extensions/filters/network/ext_authz:config",
-    # "envoy.filters.network.http_connection_manager":    "//source/extensions/filters/network/http_connection_manager:config",
+    "envoy.filters.network.http_connection_manager":    "//source/extensions/filters/network/http_connection_manager:config",
     # WiP
     # "envoy.filters.network.kafka":                      "//source/extensions/filters/network/kafka:kafka_request_codec_lib",
     # "envoy.filters.network.mongo_proxy":                "//source/extensions/filters/network/mongo_proxy:config",
     # "envoy.filters.network.mysql_proxy":                "//source/extensions/filters/network/mysql_proxy:config",
     # "envoy.filters.network.ratelimit":                  "//source/extensions/filters/network/ratelimit:config",
-    "envoy.filters.network.rbac":                       "//source/extensions/filters/network/rbac:config",
+    # "envoy.filters.network.rbac":                       "//source/extensions/filters/network/rbac:config",
     # "envoy.filters.network.redis_proxy":                "//source/extensions/filters/network/redis_proxy:config",
     "envoy.filters.network.tcp_proxy":                  "//source/extensions/filters/network/tcp_proxy:config",
     # "envoy.filters.network.thrift_proxy":               "//source/extensions/filters/network/thrift_proxy:config",
@@ -104,8 +104,8 @@ EXTENSIONS = {
     # Resource monitors
     #
 
-    "envoy.resource_monitors.fixed_heap":               "//source/extensions/resource_monitors/fixed_heap:config",
-    "envoy.resource_monitors.injected_resource":        "//source/extensions/resource_monitors/injected_resource:config",
+    # "envoy.resource_monitors.fixed_heap":               "//source/extensions/resource_monitors/fixed_heap:config",
+    # "envoy.resource_monitors.injected_resource":        "//source/extensions/resource_monitors/injected_resource:config",
 
     #
     # Stat sinks
@@ -146,14 +146,14 @@ EXTENSIONS = {
     # Retry host predicates
     #
 
-    "envoy.retry_host_predicates.previous_hosts":       "//source/extensions/retry/host/previous_hosts:config",
-    "envoy.retry_host_predicates.omit_canary_hosts":    "//source/extensions/retry/host/omit_canary_hosts:config",
+    # "envoy.retry_host_predicates.previous_hosts":       "//source/extensions/retry/host/previous_hosts:config",
+    # "envoy.retry_host_predicates.omit_canary_hosts":    "//source/extensions/retry/host/omit_canary_hosts:config",
 
     #
     # Retry priorities
     #
 
-    "envoy.retry_priorities.previous_priorities":       "//source/extensions/retry/priority/previous_priorities:config",
+    # "envoy.retry_priorities.previous_priorities":       "//source/extensions/retry/priority/previous_priorities:config",
 }
 
 WINDOWS_EXTENSIONS = {
