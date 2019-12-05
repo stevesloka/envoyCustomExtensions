@@ -14,3 +14,10 @@ Example Command:
 ```bash
 $ bazel --bazelrc=/dev/null build -c opt //source/exe:envoy-static.stripped --override_repository envoy_build_config=<absolutePath>/envoy_custom
 ```
+
+## Build Docker Image
+
+```bash
+$ mkdir -p build_release_stripped && cp bazel-bin/source/exe/envoy-static build_release_stripped/envoy
+$ docker build -f ci/Dockerfile-envoy-image -t stevesloka/envoy:disext .
+```
