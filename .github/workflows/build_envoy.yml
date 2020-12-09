@@ -29,9 +29,9 @@ jobs:
       - name: Build Envoy
         run: |
           git clone https://github.com/envoyproxy/envoy.git && \
-            cd envoy && \
-            git fetch && \
-            git checkout v1.16.1
+            cd envoy 
+            # git fetch && \
+            # git checkout v1.16.1
           ls -la 
           ./ci/run_envoy_docker.sh './ci/do_ci.sh bazel.release'
         
