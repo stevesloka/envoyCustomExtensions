@@ -24,11 +24,7 @@ jobs:
     steps:
     
       - uses: actions/checkout@v2
-      - name: Install LLVM and Clang
-        uses: KyleMayes/install-llvm-action@v1
-        with:
-          version: "10.0"
-          directory: ${{ runner.temp }}/llvm
+    
       - name: Build Envoy
         run: |
           git clone https://github.com/envoyproxy/envoy.git && \
@@ -39,7 +35,6 @@ jobs:
           ./ci/run_envoy_docker.sh './ci/do_ci.sh bazel.release.server_only'
           mkdir -p build_release_stripped
           cp /tmp/envoy-docker-build/envoy/source/exe/envoy build_release_stripped/envoy
-          docker build -f ci/Dockerfile-envoy -t $PUBLISH_IMAGE_NAME .
 
   # Push image to GitHub Packages.
   # See also https://docs.docker.com/docker-hub/builds/
@@ -53,8 +48,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      # - name: Build image
-      #   run: docker build . --file Dockerfile --tag $PUBLISH_IMAGE_NAME
+      - name: Build image
+        run:  |
+          cd envoy
+          docker build -f ci/Dockerfile-envoy -t $PUBLISH_IMAGE_NAME .
 
       - name: Log into registry
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
