@@ -13,7 +13,7 @@ EXTENSIONS = {
     #
 
     #"envoy.clusters.aggregate":                         "//source/extensions/clusters/aggregate:cluster",
-    "envoy.clusters.dynamic_forward_proxy":             "//source/extensions/clusters/dynamic_forward_proxy:cluster",
+    #"envoy.clusters.dynamic_forward_proxy":             "//source/extensions/clusters/dynamic_forward_proxy:cluster",
     #"envoy.clusters.redis":                             "//source/extensions/clusters/redis:redis_cluster",
 
     #
@@ -21,7 +21,7 @@ EXTENSIONS = {
     #
 
     "envoy.compression.gzip.compressor":                "//source/extensions/compression/gzip/compressor:config",
-   # "envoy.compression.gzip.decompressor":              "//source/extensions/compression/gzip/decompressor:config",
+    # "envoy.compression.gzip.decompressor":              "//source/extensions/compression/gzip/decompressor:config",
 
     #
     # gRPC Credentials Plugins
@@ -40,7 +40,7 @@ EXTENSIONS = {
     # HTTP filters
     #
 
-    "envoy.filters.http.adaptive_concurrency":          "//source/extensions/filters/http/adaptive_concurrency:config",
+    # "envoy.filters.http.adaptive_concurrency":          "//source/extensions/filters/http/adaptive_concurrency:config",
     #"envoy.filters.http.admission_control":             "//source/extensions/filters/http/admission_control:config",
     #"envoy.filters.http.aws_lambda":                    "//source/extensions/filters/http/aws_lambda:config",
     #"envoy.filters.http.aws_request_signing":           "//source/extensions/filters/http/aws_request_signing:config",
@@ -55,12 +55,12 @@ EXTENSIONS = {
    # "envoy.filters.http.dynamo":                        "//source/extensions/filters/http/dynamo:config",
     "envoy.filters.http.ext_authz":                     "//source/extensions/filters/http/ext_authz:config",
    # "envoy.filters.http.fault":                         "//source/extensions/filters/http/fault:config",
-    "envoy.filters.http.grpc_http1_bridge":             "//source/extensions/filters/http/grpc_http1_bridge:config",
-    "envoy.filters.http.grpc_http1_reverse_bridge":     "//source/extensions/filters/http/grpc_http1_reverse_bridge:config",
-    "envoy.filters.http.grpc_json_transcoder":          "//source/extensions/filters/http/grpc_json_transcoder:config",
+    # "envoy.filters.http.grpc_http1_bridge":             "//source/extensions/filters/http/grpc_http1_bridge:config",
+    # "envoy.filters.http.grpc_http1_reverse_bridge":     "//source/extensions/filters/http/grpc_http1_reverse_bridge:config",
+    # "envoy.filters.http.grpc_json_transcoder":          "//source/extensions/filters/http/grpc_json_transcoder:config",
     "envoy.filters.http.grpc_stats":                    "//source/extensions/filters/http/grpc_stats:config",
     "envoy.filters.http.grpc_web":                      "//source/extensions/filters/http/grpc_web:config",
-    "envoy.filters.http.gzip":                          "//source/extensions/filters/http/gzip:config",
+    # "envoy.filters.http.gzip":                          "//source/extensions/filters/http/gzip:config",
    # "envoy.filters.http.header_to_metadata":            "//source/extensions/filters/http/header_to_metadata:config",
     "envoy.filters.http.health_check":                  "//source/extensions/filters/http/health_check:config",
    # "envoy.filters.http.ip_tagging":                    "//source/extensions/filters/http/ip_tagging:config",
@@ -69,7 +69,7 @@ EXTENSIONS = {
     "envoy.filters.http.lua":                           "//source/extensions/filters/http/lua:config",
     #"envoy.filters.http.oauth2":                         "//source/extensions/filters/http/oauth2:config",
     #"envoy.filters.http.on_demand":                     "//source/extensions/filters/http/on_demand:config",
-    "envoy.filters.http.original_src":                  "//source/extensions/filters/http/original_src:config",
+    # "envoy.filters.http.original_src":                  "//source/extensions/filters/http/original_src:config",
     #"envoy.filters.http.ratelimit":                     "//source/extensions/filters/http/ratelimit:config",
     #"envoy.filters.http.rbac":                          "//source/extensions/filters/http/rbac:config",
     "envoy.filters.http.router":                        "//source/extensions/filters/http/router:config",
@@ -97,7 +97,7 @@ EXTENSIONS = {
     "envoy.filters.network.client_ssl_auth":            "//source/extensions/filters/network/client_ssl_auth:config",
    # "envoy.filters.network.direct_response":            "//source/extensions/filters/network/direct_response:config",
    # "envoy.filters.network.dubbo_proxy":                "//source/extensions/filters/network/dubbo_proxy:config",
-    "envoy.filters.network.echo":                       "//source/extensions/filters/network/echo:config",
+    # "envoy.filters.network.echo":                       "//source/extensions/filters/network/echo:config",
     "envoy.filters.network.ext_authz":                  "//source/extensions/filters/network/ext_authz:config",
     "envoy.filters.network.http_connection_manager":    "//source/extensions/filters/network/http_connection_manager:config",
     # WiP
